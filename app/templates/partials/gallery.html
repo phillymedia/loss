@@ -7,7 +7,7 @@
                 alt="{{item.caption}}"
                 data-index="{{loop.index0}}"
                 class="lazy-load"
-                src="{{item._name}}">
+                src="{{item._name | replace('600*450/','945*945/')}}">
         </div>
         {% else %}
 
@@ -16,7 +16,7 @@
                 alt="{{item.caption}}"
                 data-index="{{loop.index0}}"
                 class="lazy-load"
-                data-src="{{item._name}}">
+                data-src="{{item._name | replace('600*450/','945*945/')}}">
         </div>
 
         {% endif %}
